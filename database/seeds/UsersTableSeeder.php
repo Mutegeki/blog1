@@ -32,6 +32,6 @@ class UsersTableSeeder extends Seeder
                 'email' => "annmute@test.com",
                 'password' => bcrypt('secret')
             ],
-        ])
+        ]);
     }
 }
