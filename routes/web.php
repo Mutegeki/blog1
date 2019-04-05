@@ -20,4 +20,4 @@ Route::get('/blog/show', function () {
 });
 
 
-Route::get('/', 'BlogController@index');
+Route::get('/', 'BlogController@index')->name('blog');
