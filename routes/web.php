@@ -15,9 +15,9 @@
     //return view('blog.index');
 //});
 
-Route::get('/blog/show', function () {
-    return view('blog.show');
-});
+//Route::get('/blog/show', function () {
+   // return view('blog.show');
+//});
 
 
 Route::get('/', 'BlogController@index')->name('blog');
