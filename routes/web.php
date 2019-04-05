@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blog.index');
-});
+//Route::get('/', function () {
+    //return view('blog.index');
+//});
 
-Route::get('/blog/show', function () {
-    return view('blog.show');
-});
+//Route::get('/blog/show', function () {
+   // return view('blog.show');
+//});
+
+
+Route::get('/', 'BlogController@index')->name('blog');
+Route::get('/blog/{post}', 'BlogController@show')->name('blog.show');
