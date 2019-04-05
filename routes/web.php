@@ -21,3 +21,4 @@ Route::get('/blog/show', function () {
 
 
 Route::get('/', 'BlogController@index')->name('blog');
+Route::get('/blog/{post}', 'BlogController@show')->name('blog.show');
